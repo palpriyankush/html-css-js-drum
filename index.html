@@ -23,19 +23,19 @@
 <body>
   <div class="drum-container">
     <div class="drum">
-      <img src="../public/snare.jpeg" alt="Snare Drum">
+      <img src="./public/snare.jpeg" alt="Snare Drum">
       <p>Press 'A'</p>
     </div>
     <div class="drum">
-      <img src="../public/bass.jpeg" alt="Bass Drum">
+      <img src="./public/bass.jpeg" alt="Bass Drum">
       <p>Press 'S'</p>
     </div>
     <div class="drum">
-      <img src="../public/hihat.jpeg" alt="Hi-Hat">
+      <img src="./public/hihat.jpeg" alt="Hi-Hat">
       <p>Press 'D'</p>
     </div>
     <div class="drum">
-      <img src="../public/tom.jpeg" alt="Tom Drum">
+      <img src="./public/tom.jpeg" alt="Tom Drum">
       <p>Press 'F'</p>
     </div>
   </div>
@@ -45,10 +45,10 @@
 
     document.addEventListener('keydown', (event) => {
       const audioMap = {
-        'a': '../public/snare.mp3',
-        's': '../public/bass.mp3',
-        'd': '../public/hihat.mp3',
-        'f': '../public/tom.mp3',
+        'a': './public/snare.mp3',
+        's': './public/bass.mp3',
+        'd': './public/hihat.mp3',
+        'f': './public/tom.mp3',
       };
 
       const audioSrc = audioMap[event.key.toLowerCase()];
